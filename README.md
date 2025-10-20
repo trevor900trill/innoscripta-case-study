@@ -2,12 +2,12 @@
 
 A modern **React + TypeScript** frontend project containerized with **Docker** for easy deployment and reproducibility.
 
----
+<!-- ---
 
 ## Quick Preview
 
 You can see a quick preview here:
-[https://innoscripta-case-study.vercel.app/](https://innoscripta-case-study.vercel.app/)
+[https://innoscripta-case-study.vercel.app/](https://innoscripta-case-study.vercel.app/) -->
 
 ---
 
