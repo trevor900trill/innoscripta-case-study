@@ -10,8 +10,6 @@ A modern **React + TypeScript** frontend project containerized with **Docker** f
 You can see a quick preview here:
 [https://innoscripta-case-study.vercel.app/](https://innoscripta-case-study.vercel.app/) -->
 
----
-
 ## Clone the Repository
 
 ```bash
@@ -28,7 +26,7 @@ npm run dev
 
 ---
 
-## Build and Run with Docker
+## Or Build and Run with Docker
 
 ### Build the Docker image
 
