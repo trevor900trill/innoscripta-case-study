@@ -1,16 +1,20 @@
-'use client';
+"use client";
 
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Separator } from '@/components/ui/separator';
-import { Search, Calendar as CalendarIcon, X as ClearIcon } from 'lucide-react';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Button } from '@/components/ui/button';
-import { Calendar } from '@/components/ui/calendar';
-import { format } from 'date-fns';
-import { cn } from '@/lib/utils';
-import type { DateRange } from 'react-day-picker';
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Separator } from "@/components/ui/separator";
+import { Search, Calendar as CalendarIcon, X as ClearIcon } from "lucide-react";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
+import { format } from "date-fns";
+import { cn } from "@/lib/utils";
+import type { DateRange } from "react-day-picker";
 
 interface FilterPanelProps {
   searchQuery: string;
@@ -40,7 +44,7 @@ export function FilterPanel({
   onResetFilters,
 }: FilterPanelProps) {
   const areFiltersActive =
-    searchQuery !== '' ||
+    searchQuery !== "" ||
     selectedCategories.length > 0 ||
     selectedSources.length > 0 ||
     dateRange !== undefined;
@@ -59,7 +63,12 @@ export function FilterPanel({
           />
         </div>
         {areFiltersActive && (
-          <Button variant="ghost" size="sm" onClick={onResetFilters} className="w-full justify-start text-muted-foreground hover:text-foreground">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={onResetFilters}
+            className="w-full justify-start text-muted-foreground hover:text-foreground"
+          >
             <ClearIcon className="w-4 h-4 mr-2" />
             Reset Filters
           </Button>
@@ -76,21 +85,21 @@ export function FilterPanel({
           <PopoverTrigger asChild>
             <Button
               id="date"
-              variant={'outline'}
+              variant={"outline"}
               className={cn(
-                'w-full justify-start text-left font-normal',
-                !dateRange && 'text-muted-foreground'
+                "w-full justify-start text-left font-normal",
+                !dateRange && "text-muted-foreground"
               )}
             >
               <CalendarIcon className="w-4 h-4 mr-2" />
               {dateRange?.from ? (
                 dateRange.to ? (
                   <>
-                    {format(dateRange.from, 'LLL dd, y')} -{' '}
-                    {format(dateRange.to, 'LLL dd, y')}
+                    {format(dateRange.from, "LLL dd, y")} -{" "}
+                    {format(dateRange.to, "LLL dd, y")}
                   </>
                 ) : (
-                  format(dateRange.from, 'LLL dd, y')
+                  format(dateRange.from, "LLL dd, y")
                 )
               ) : (
                 <span>Pick a date</span>
@@ -135,7 +144,9 @@ export function FilterPanel({
               </div>
             ))
           ) : (
-            <p className="text-sm text-muted-foreground">No categories available.</p>
+            <p className="text-sm text-muted-foreground">
+              No categories available.
+            </p>
           )}
         </div>
       </div>
@@ -165,7 +176,9 @@ export function FilterPanel({
               </div>
             ))
           ) : (
-             <p className="text-sm text-muted-foreground">No sources available.</p>
+            <p className="text-sm text-muted-foreground">
+              No sources available.
+            </p>
           )}
         </div>
       </div>
