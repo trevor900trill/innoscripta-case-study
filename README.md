@@ -2,8 +2,9 @@
 
 A modern **React + TypeScript** frontend project containerized with **Docker** for easy deployment and reproducibility.
 
-<!-- ---
+---
 
+<!--
 ## Quick Preview
 
 You can see a quick preview here:
@@ -14,7 +15,14 @@ You can see a quick preview here:
 ## Clone the Repository
 
 ```bash
+
 git clone https://github.com/trevor900trill/innoscripta-case-study.git
+
+cd innoscripta-case-study
+
+npm install
+
+npm run dev
 
 ```
 
