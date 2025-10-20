@@ -4,11 +4,10 @@ A modern **React + TypeScript** frontend project containerized with **Docker** f
 
 ---
 
-<!--
 ## Quick Preview
 
 You can see a quick preview here:
-[https://innoscripta-case-study.vercel.app/](https://innoscripta-case-study.vercel.app/) -->
+[https://innoscripta-case-study.vercel.app/](https://innoscripta-case-study.vercel.app/)
 
 ## Clone the Repository
 
