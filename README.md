@@ -1,7 +1,5 @@
 # Innoscripta Frontend Assessment
 
-A modern **React + TypeScript** frontend project containerized with **Docker** for easy deployment and reproducibility.
-
 ---
 
 ## Quick Preview
